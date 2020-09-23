@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NY Times Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron" id="jumbo-main">
+                    <h1><span><i class="far fa-newspaper news"></i></span>New York Times Search</h1>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card main-card">
+                    <h5 class="card-header"><span><i class="far fa-list-alt list"></i></span>Search Parameters</h5>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                              <label for="searchTerm" class="float-left">Search Term</label>
+                              <input type="text" class="form-control" id="searchTerm">
+                            </div>
+                            <div class="form-group">
+                                <label for="records" class="float-left">Number of Records to Retrieve</label>
+                                <select class="form-control" id="records">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="endYear" class="float-left">Start Year</label>
+                                <input type="text" class="form-control" id="startYear">
+                              </div>
+                              <div class="form-group">
+                                <label for="endYear" class="float-left">End Year</label>
+                                <input type="text" class="form-control" id="endYear">
+                              </div>
+                            <button type="submit" class="btn btn-primary btns float-left" id="search-btn">Search</button>
+                            <button type="reset" class="btn btn-primary btns float-left" id="clear-btn">Clear Results</button>
+                          </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <span><i class="fas fa-pencil-alt"></i></span> Top Articles
+                    </div>
+                    <div class="card-body" id="articleDump">
+        
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./search.js"></script>
+  
+</body>
+</html>

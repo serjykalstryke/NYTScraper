@@ -1,0 +1,42 @@
+
+
+
+
+.jumbotron{
+    background-color: darkslateblue!important;
+    color: white;
+    text-align: center;
+    font-family: 'Grenze Gotisch', cursive;
+
+}
+
+h1{
+    font-size: 65px !important;
+}
+
+.news{
+    margin-right: 8px;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-header{
+    background-color: darkslateblue !important;
+    color: white;
+}
+
+.btns{
+    background-color: darkslateblue;
+    border: none !important;
+    margin: 5px;
+}
+
+.list{
+    margin-right: 5px;
+}
+
+.card-header{
+    font-size: 16px !important;
+}
