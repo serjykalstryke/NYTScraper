@@ -23,11 +23,8 @@ function getSearchResults() {
             var headline = $('<a>').text(results[i].headline.main);
             headline.attr("href", results[i].web_url)
             var byLine = $('<h5>').text(results[i].byline.original);
-            // var webURL = $('<a>').text(results[i].web_url)
-            // webURL.attr('href', results[i].web_url)
             $("#articleDump").append(headline);
             $("#articleDump").append(byLine);
-            // $("#articleDump").append(webURL);
             console.log(headline);
         }
     }
