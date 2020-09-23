@@ -5,6 +5,16 @@ $("#search-btn").on("click", function (event) {
   console.log(search);
     var apiKey = "XH7FUB8EEP6kAlBvxbIiARtiPJao53QS"
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+ search +" &api-key=" + apiKey;
+
+    var begin = $("#startYear").val();
+    var end = $("#endYear").val();
+    if(begin) {
+        queryURL = queryURL + "&begin_date=" + begin + "0101";
+    }
+    if(end) {
+        queryURL = queryURL + "&end_date=" + end + "1231";
+    }
+    
 $.ajax({
     url: queryURL,
     method: "GET"
